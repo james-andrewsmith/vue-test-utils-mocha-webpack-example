@@ -42,8 +42,12 @@
     "ts-loader": "^2.0.3",
     "typescript": "^2.3.2",
     "vue-loader": "^13.0.5",
+<<<<<<< HEAD
     "vue-server-renderer": "^2.5.13",
     "vue-template-compiler": "^2.5.13",
+=======
+    "vue-template-compiler": "^2.4.4",
+>>>>>>> c1be59d12eb72c0acd9b74810919df39239cf3bc
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-node-externals": "^1.6.0"
