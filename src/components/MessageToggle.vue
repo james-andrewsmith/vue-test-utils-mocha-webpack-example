@@ -10,14 +10,9 @@
   </div>
 </template>
 
-<<<<<<< HEAD
 <script lang="ts">
 import Vue from 'vue'
 import Message from 'components/Message.vue'
-=======
-<script>
-import Message from './Message.vue'
->>>>>>> c1be59d12eb72c0acd9b74810919df39239cf3bc
 
 const someOtherMethod = async () => {
   throw { message: 'James is average' };
