@@ -1,16 +1,31 @@
 <template>
-  <ul>
-    <li v-for="item in items">
+
+  <ul class="t">
+    <li v-for="(item, i) in localItems" :key="i">
       {{ item }}
     </li>
   </ul>
+  
 </template>
 
-<script>
+<script lang="ljs">
 export default {
   name: 'list',
-  props: [
-    'items'
-  ]
+  props: {
+    'items': {
+      type: Array,
+      required: true
+    }
+  },
+  data() {
+    return {
+      localItems: this['items']
+    }
+  },
+  methods: {
+    test() {
+      return 1;
+    }
+  }
 }
 </script>

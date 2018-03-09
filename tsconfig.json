@@ -1,0 +1,27 @@
+
+{
+    "compilerOptions": {
+
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "dom",
+            "es5",
+            "es2015.promise"
+        ],
+        // "allowJs": true,
+        "outDir": "./built/",
+        "sourceMap": true,
+        "traceResolution": true,
+        "noImplicitAny": false,
+        "baseUrl": "./",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "paths": {
+        
+            "components/*": ["src/components/*"]
+        },
+        "rootDirs": [
+            "./src"
+        ]
+    }
+}

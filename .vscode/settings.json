@@ -1,0 +1,5 @@
+{
+	"mocha.logVerbose": true,
+	"mocha.runTestsOnSave": "true",
+	"mocha.files.glob": "test/*.spec.{js}"
+}
