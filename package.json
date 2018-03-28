@@ -1,71 +1,78 @@
 {
-  "name": "vue-test-utils-mocha-example",
-  "description": "Example project using mocha-webpack and vue-test-utils",
-  "version": "1.0.0",
-  "author": "Evan You <yyx990803@gmail.com>",
-  "private": true,
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "test": "cross-env NODE_ENV=test nyc mocha-webpack --webpack-config webpack.config.js  --require test/setup.js test/**/*.spec.{js,ts}",
-    "test:watch": "cross-env NODE_ENV=test nyc mocha-webpack --watch --webpack-config webpack.config.js  --require test/setup.js test/**/*.spec.{js,ts}",
-    "mtest": "cross-env NODE_ENV=test nyc mocha-webpack --webpack-config webpack.config.js "
-  },
-  "dependencies": {
-    "@types/chai": "^4.1.2",
-    "@types/lodash": "^4.14.104",
-    "@types/mocha": "^2.2.48",
-    "buble-loader": "^0.4.1",
-    "lodash": "^4.17.5",
-    "vue": "^2.5.2",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.12",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-istanbul": "^4.1.5",
-    "babel-preset-env": "^1.6.0",
-    "chai": "^4.1.2",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "expect": "^21.2.1",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.4",
-    "jsdom": "^11.3.0",
-    "jsdom-global": "^3.0.2",
-    "mocha": "^3.5.3",
-    "mocha-webpack": "^1.0.0-rc.1",
-    "nyc": "^11.4.1",
-    "ts-loader": "^2.0.3",
-    "typescript": "^2.3.2",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1",
-    "webpack-node-externals": "^1.6.0"
-  },
-  "nyc": {
-    "include": [
-      "src/**/*.(js|vue)"
-    ],
-    "instrument": false,
-    "sourceMap": false
-  },
-  "env": {
-    "test": {
-      "presets": [
-        [
-          "env",
-          {
-            "targets": {
-              "node": "current"
-            }
-          }
-        ]
-      ]
-    }
-  }
+	"name": "vue-test-utils-mocha-example",
+	"description": "Example project using mocha-webpack and vue-test-utils",
+	"version": "1.0.0",
+	"author": "Evan You <yyx990803@gmail.com>",
+	"private": true,
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+		"build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+		"test": "cross-env NODE_ENV=test nyc mocha-webpack --webpack-config webpack.config.js  --require test/setup.js test/**/*.spec.{js,ts}",
+		"test:watch": "cross-env NODE_ENV=test nyc mocha-webpack --watch --webpack-config webpack.config.js  --require test/setup.js test/**/*.spec.{js,ts}",
+		"mtest": "cross-env NODE_ENV=test nyc mocha-webpack --webpack-config webpack.config.js "
+	},
+	"dependencies": {
+		"@types/chai": "^4.1.2",
+		"@types/lodash": "^4.14.104",
+		"@types/mocha": "^2.2.48",
+		"buble-loader": "^0.4.1",
+		"lodash": "^4.17.5",
+		"vue": "^2.5.2",
+		"vue-class-component": "^6.0.0",
+		"vue-property-decorator": "^6.0.0",
+		"vue-router": "^3.0.1"
+	},
+	"devDependencies": {
+		"@vue/test-utils": "^1.0.0-beta.13",
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-istanbul": "^4.1.5",
+		"babel-preset-env": "^1.6.0",
+		"chai": "^4.1.2",
+		"cross-env": "^5.0.5",
+		"css-loader": "^0.28.7",
+		"expect": "^21.2.1",
+		"extract-text-webpack-plugin": "^3.0.2",
+		"file-loader": "^1.1.4",
+		"jsdom": "^11.3.0",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^3.5.3",
+		"mocha-webpack": "^1.0.0-rc.1",
+		"nyc": "^11.4.1",
+		"prettier": "1.11.1",
+		"ts-loader": "^2.0.3",
+		"typescript": "^2.3.2",
+		"vue-loader": "^13.0.5",
+		"vue-template-compiler": "^2.4.4",
+		"webpack": "^3.6.0",
+		"webpack-dev-server": "^2.9.1",
+		"webpack-node-externals": "^1.6.0"
+	},
+	"nyc": {
+		"include": [
+			"src/**/*.(js|vue)"
+		],
+		"instrument": false,
+		"sourceMap": false
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"singleQuote": true,
+		"arrowParens": "always"
+	},
+	"env": {
+		"test": {
+			"presets": [
+				[
+					"env",
+					{
+						"targets": {
+							"node": "current"
+						}
+					}
+				]
+			]
+		}
+	}
 }

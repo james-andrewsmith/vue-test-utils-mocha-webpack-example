@@ -6,20 +6,21 @@
 </template>
 
 <script lang="ts">
-import MessageToggle from 'components/MessageToggle.vue'
-import List from 'components/List.vue'
+import Vue from 'vue';
+import MessageToggle from 'components/MessageToggle.vue';
+import List from 'components/List.vue';
 
-export default {
-  components: {
-    MessageToggle,
-    List
-  }
-}
+export default Vue.extend({
+	components: {
+		MessageToggle,
+		List
+	}
+});
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	color: #2c3e50;
 }
 </style>

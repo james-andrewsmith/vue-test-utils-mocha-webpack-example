@@ -1,8 +1,8 @@
 <template>
 
-  <ul class="t">
+  <ul>
     <li v-for="(item, i) in localItems" :key="i">
-      {{ item }}
+      {{ item }}  
     </li>
   </ul>
   
@@ -12,14 +12,14 @@
 export default {
   name: 'list',
   props: {
-    'items': {
+    items: {
       type: Array,
       required: true
     }
   },
   data() {
     return {
-      localItems: this['items']
+      localItems: this.items
     }
   },
   methods: {

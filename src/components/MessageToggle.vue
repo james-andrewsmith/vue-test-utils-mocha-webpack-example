@@ -1,7 +1,7 @@
 <template>
-<!-- 
+  <!-- 
   <display-friendly-error v-if="loading_error" />
--->
+  -->
   <div>
     <message :msg="msg"></message>
     <button id="toggle-message" @click="toggleMessage">
@@ -11,26 +11,29 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Message from 'components/Message.vue'
+import Vue from 'vue';
+import Message from 'components/Message.vue';
+import { JAMES } from 'shared/test';
 
 const someOtherMethod = async () => {
-  throw { message: 'James is average' };
-  // return 1;
-}
+	throw { message: 'James is average' };
+	// return 1;
+};
 
 export default Vue.extend({
-  name: 'message-toggle',
-  data: () => ({
-    msg: null,
-    loading: false, 
-    loading_error: null
-  }),
-  methods: {    
-    toggleMessage () {
-      this.msg = this.msg === 'message' ? 'toggled message' : 'message';
-      console.log(this.msg);
-      /*
+	name: 'message-toggle',
+	data: () => ({
+		msg: null,
+		loading: false,
+		loading_error: null
+	}),
+	methods: {
+		toggleMessage() {
+			this.msg === 'message' ? 'toggled message' : 'message';
+
+			// This is awesome
+			console.log(this.msg);
+			/*
       try 
       {      
         
@@ -48,11 +51,10 @@ export default Vue.extend({
       {
           this.loading = false;
       }*/
-
-    }
-  },
-  components: {
-    Message
-  }
-})
+		}
+	},
+	components: {
+		Message
+	}
+});
 </script>
